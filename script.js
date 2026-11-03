@@ -5,39 +5,46 @@ document.addEventListener('DOMContentLoaded', () => {
             company: "Sponte",
             role: "AI Engineer (Founding Team)",
             period: "Apr 2026 – Present",
-            description: "Architecting Generative AI workflows, multi-step LLM pipelines, and AI-powered enterprise solutions for production use cases. Building scalable FastAPI microservices integrated with vector databases including FAISS and pgvector for contextual reasoning over proprietary data.",
-            tech: ["Python", "FastAPI", "LLMs", "FAISS", "pgvector", "Prompt Engineering"]
+            description: "Building a real-time AI sales assistant end to end. Built event-driven meeting-bot scheduling (Recall.ai) from Google Calendar webhooks and forwarded Gmail invites (Pub/Sub, .ics parsing) across Meet, Zoom and Teams. Engineered mid-call product/deal switching with per-call state isolation, moved funnel-stage detection to a single post-call LLM classification validated with ablation experiments, and integrated DeepSeek and Bedrock models via LiteLLM. Took Terraform-managed AWS infrastructure (ECS, ALB, Secrets Manager, SES, S3) to production and shipped in-app updates for the Electron desktop app.",
+            tech: ["Python", "FastAPI", "LLMs", "LiteLLM", "AWS Bedrock", "Terraform", "ECS", "PostgreSQL", "Electron"]
         },
         {
             company: "Freshmenu",
             role: "Software Development Engineer",
             period: "Jan 2024 – Mar 2026",
-            description: "Built an AI-driven Financial Reconciliation Platform using FastAPI, Next.js, and LLM workflows. Engineered a Procurement Automation System using OpenCV. Developed and maintained scalable backend services using Java, Spring Boot, and MySQL.",
-            tech: ["Java", "Spring Boot", "MySQL", "Next.js", "FastAPI", "OpenCV", "ActiveMQ"]
+            description: "Built an LLM-driven financial reconciliation platform that auto-detects payout mismatches across Zomato, Swiggy, Magicpin and Bitsila, and an LLM rules engine (FAISS + open-source GPT models) that extracts reconciliation rules from partner-agreement PDFs. Engineered OpenCV-based procurement automation, led ONDC integrations with JWT-secured APIs and async order processing on ActiveMQ, and hardened Java/Spring Boot ordering services.",
+            tech: ["Java", "Spring Boot", "MySQL", "MongoDB", "FastAPI", "Next.js", "FAISS", "OpenCV", "ActiveMQ"]
         },
         {
             company: "Freshmenu",
             role: "Software Developer Intern",
             period: "Sep 2023 – Dec 2023",
-            description: "Worked on backend engineering and API development tasks using Java, Spring Boot, MySQL, and MongoDB. Contributed to third-party integrations and feature enhancements.",
+            description: "Shipped REST APIs and third-party integrations in Java/Spring Boot, MySQL and MongoDB; converted to a full-time SDE role.",
             tech: ["Java", "Spring Boot", "MySQL", "MongoDB", "REST APIs"]
         }
     ];
 
     const projects = [
         {
-            title: "AI Agent for Academic Guidance",
-            description: "Full-stack Retrieval-Augmented Generation (RAG) system for context-aware academic guidance. Implemented JWT authentication, rate limiting, and optimized chunking strategies.",
-            year: "2024",
-            tech: ["FastAPI", "LangChain", "OpenAI", "pgvector", "AWS", "Docker"],
-            liveLink: "https://github.com/sunnyarya0"
+            title: "Personal AI Agent",
+            description: "Fully local autonomous agent with a ReAct plan–act–observe loop, decorator-based tool registry and ChromaDB long-term memory. Sandboxed file and shell tools block path traversal and destructive commands; includes token-budget alerts and exponential-backoff retries.",
+            year: "2026",
+            tech: ["Python", "Ollama", "ChromaDB", "sentence-transformers"],
+            link: "https://github.com/sunnyarya0/my-personal-assistant"
         },
         {
-            title: "Spatio-Temporal Crime Prediction",
-            description: "Multi-class crime classification system on 800K+ records using temporal, spatial, and cyclical feature engineering.",
-            year: "2023",
-            tech: ["Python", "XGBoost", "Scikit-learn", "Pandas", "GridSearchCV"],
-            liveLink: "https://github.com/sunnyarya0"
+            title: "AI Knowledge Assistant",
+            description: "Self-hosted RAG system that ingests PDFs and text, retrieves with semantic search and streams answers with source citations, using local LLMs and no external APIs.",
+            year: "2026",
+            tech: ["FastAPI", "Next.js", "ChromaDB", "Ollama", "Llama 3.2"],
+            link: "https://github.com/sunnyarya0/ai-knowledge-assistant"
+        },
+        {
+            title: "AI Agent for Academic Guidance",
+            description: "Full-stack RAG system for context-aware academic guidance with tuned chunking, reranking, JWT authentication and rate limiting; deployed on AWS EC2 with Docker, Nginx and GitHub Actions CI/CD.",
+            year: "2024",
+            tech: ["FastAPI", "LangChain", "OpenAI", "pgvector", "AWS", "Docker"],
+            link: null
         }
     ];
 
@@ -76,8 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
         item.className = 'project-item';
         item.innerHTML = `
             <div class="project-header-row">
-                <a href="#" class="project-title" target="_blank" rel="noopener noreferrer">${project.title}</a>
-                <a href="${project.liveLink}" class="live-link" target="_blank" rel="noopener noreferrer">Live</a>
+                ${project.link
+                    ? `<a href="${project.link}" class="project-title" target="_blank" rel="noopener noreferrer">${project.title}</a>
+                <a href="${project.link}" class="live-link" target="_blank" rel="noopener noreferrer">Code</a>`
+                    : `<span class="project-title">${project.title}</span>`}
             </div>
             <div class="project-year">${project.year}</div>
             <p class="project-desc">${project.description}</p>
