@@ -3,142 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunny Arya - AI Engineer Portfolio</title>
-    <meta name="description" content="Portfolio of Sunny Arya, an AI Engineer specializing in building scalable backend systems and Generative AI applications with Python, Java, and LLMs.">
-    <meta name="keywords" content="Sunny Arya, AI Engineer, Backend Developer, Generative AI, LLM, Python, Java, Spring Boot, FastAPI, IIT Madras, Sponte, Bengaluru">
+    <title>Sunny Arya – AI Engineer</title>
+    <meta name="description" content="Sunny Arya is a founding AI engineer at Sponte in Bengaluru, building a real-time AI sales assistant. ~3 years shipping production backend and GenAI systems in Python/FastAPI and Java/Spring Boot.">
+    <meta name="keywords" content="Sunny Arya, AI Engineer, Backend Engineer, Generative AI, LLM, RAG, Agents, Python, FastAPI, Java, Spring Boot, AWS, Sponte, Freshmenu, IIT Madras, Bengaluru">
     <meta name="author" content="Sunny Arya">
-    
+    <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#10151d" media="(prefers-color-scheme: dark)">
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="profile">
     <meta property="og:url" content="https://sunnyarya0.github.io/">
-    <meta property="og:title" content="Sunny Arya - AI Engineer Portfolio">
-    <meta property="og:description" content="AI Engineer building scalable backend systems and Generative AI applications with Python, Java, and LLMs.">
+    <meta property="og:title" content="Sunny Arya – AI Engineer">
+    <meta property="og:description" content="Founding AI engineer at Sponte. Building production AI systems and dependable backend platforms.">
     <meta property="og:image" content="https://sunnyarya0.github.io/hero.png">
+    <meta property="og:image:alt" content="Portrait of Sunny Arya">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sunnyarya0.github.io/">
-    <meta property="twitter:title" content="Sunny Arya - AI Engineer Portfolio">
-    <meta property="twitter:description" content="AI Engineer building scalable backend systems and Generative AI applications with Python, Java, and LLMs.">
-    <meta property="twitter:image" content="https://sunnyarya0.github.io/hero.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sunny Arya – AI Engineer">
+    <meta name="twitter:description" content="Founding AI engineer at Sponte. Building production AI systems and dependable backend platforms.">
+    <meta name="twitter:image" content="https://sunnyarya0.github.io/hero.png">
 
     <link rel="canonical" href="https://sunnyarya0.github.io/">
+    <link rel="icon" href="hero.jpeg">
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Sunny Arya","jobTitle":"AI Engineer","worksFor":{"@type":"Organization","name":"Sponte"},"address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"},"alumniOf":"Indian Institute of Technology Madras","url":"https://sunnyarya0.github.io/","image":"https://sunnyarya0.github.io/hero.png","email":"mailto:contact.sunnyarya@gmail.com","sameAs":["https://github.com/sunnyarya0","https://www.linkedin.com/in/sunnyarya"]}
+    </script>
+    <script>
+        // Apply the saved theme before first paint so dark mode doesn't flash light.
+        try {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.dataset.theme = 'dark';
+        } catch (e) {}
+    </script>
 </head>
 <body>
-    <nav class="navbar">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
-            <div class="mobile-header-left">
-                <img src="hero.png" alt="Sunny Arya" class="mobile-avatar">
-                <div class="mobile-profile-text">
+            <a class="mobile-header-left" href="#top">
+                <img src="hero.jpeg" alt="" class="mobile-avatar" width="34" height="34">
+                <span class="mobile-profile-text">
                     <span class="mobile-name">Sunny Arya</span>
                     <span class="mobile-headline">AI Engineer</span>
-                </div>
-            </div>
-            <div class="nav-links-wrapper">
+                </span>
+            </a>
+            <div class="nav-links-wrapper" id="nav-links">
                 <div class="nav-links">
-                    <a href="mailto:contact.sunnyarya@gmail.com" class="nav-email"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Email</a>
-                    <a href="https://github.com/sunnyarya0" class="nav-github" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> GitHub</a>
-                    <a href="https://www.linkedin.com/in/sunnyarya" class="nav-linkedin" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn</a>
-                    <a href="https://www.instagram.com/thesunnyarya" class="nav-instagram" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Instagram</a>
-                    <a href="https://www.youtube.com/@thesunnyarya" class="nav-youtube" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.11 1 12 1 12s0 3.89.42 5.58a2.78 2.78 0 0 0 1.94 2c1.71.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.89 23 12 23 12s0-3.89-.42-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg> YouTube</a>
-                    <a href="resume.pdf" class="nav-resume" download><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> Resume</a>
+                    <a href="mailto:contact.sunnyarya@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Email</a>
+                    <a href="https://github.com/sunnyarya0" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> GitHub</a>
+                    <a href="https://www.linkedin.com/in/sunnyarya" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn</a>
+                    <a href="https://www.youtube.com/@thesunnyarya" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.11 1 12 1 12s0 3.89.42 5.58a2.78 2.78 0 0 0 1.94 2c1.71.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.89 23 12 23 12s0-3.89-.42-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg> YouTube</a>
+                    <a href="https://www.instagram.com/thesunnyarya" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Instagram</a>
+                    <a href="resume.pdf" download="Sunny-Arya-Resume.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> Resume</a>
                 </div>
             </div>
             <div class="nav-controls">
-                <button id="history-toggle" class="mobile-only-btn" aria-label="Toggle work journey">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                </button>
-                <button id="nav-toggle" class="mobile-only-btn" aria-label="Toggle menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                <button id="nav-toggle" class="mobile-only-btn" aria-label="Toggle menu" aria-controls="nav-links" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
                 </button>
                 <button id="theme-toggle" aria-label="Toggle dark mode">
-                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></svg>
-                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 </button>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <aside class="profile" id="profile-sidebar">
-            <div class="profile-fixed">
-                <div class="profile-image">
-                    <img src="hero.jpeg" alt="Sunny Arya">
-                </div>
-                <div class="profile-info">
-                    <h1>Sunny Arya</h1>
-                    <p class="affiliation">Founding AI Engineer @ Sponte</p>
-                    <p class="location">Bengaluru, India</p>
-                    <div class="short-about">
-                        <p>Backend + GenAI engineer with ~3 years shipping production systems in Java/Spring Boot and Python/FastAPI. Building a real-time AI sales assistant at Sponte.</p>
-                    </div>
-                    <a href="resume.pdf" class="btn-download" download>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                        Download Resume
-                    </a>
-                </div>
-            </div>
 
-            <div class="work-journey">
-                <h3>Work Journey</h3>
-                <div id="timeline-list" class="work-cards">
-                    <!-- High-level timeline will be injected here by script.js -->
+    <div class="container" id="top">
+        <main class="content" id="main">
+            <section class="intro" aria-labelledby="intro-title">
+                <p class="eyebrow">AI Engineer · Bengaluru, India</p>
+                <h1 id="intro-title">I build production AI systems and dependable backend platforms.</h1>
+                <p class="intro-copy">Founding engineer at Sponte, building a real-time AI sales assistant end to end, from LLM pipelines to AWS infrastructure. Before that, two and a half years at Freshmenu shipping LLM-powered reconciliation, procurement automation and Java ordering services.</p>
+                <div class="intro-actions">
+                    <a class="primary-action" href="mailto:contact.sunnyarya@gmail.com">Get in touch</a>
+                    <a class="secondary-action" href="resume.pdf" download="Sunny-Arya-Resume.pdf">Download resume</a>
+                    <a class="secondary-action" href="#projects">See projects</a>
                 </div>
-            </div>
-        </aside>
-        
-        <main class="content">
-            <section id="projects">
-                <h2>Projects</h2>
-                <div id="projects-list">
-                    <!-- Projects will be injected here by script.js -->
-                </div>
+            </section>
+
+            <section id="experience" aria-labelledby="experience-title">
+                <h2 id="experience-title">Experience</h2>
+
+                <article class="experience-item">
+                    <div class="experience-heading">
+                        <div>
+                            <h3>AI Engineer, Founding Team</h3>
+                            <p class="experience-company">Sponte · Bengaluru</p>
+                        </div>
+                        <span class="experience-period">Apr 2026 – Present</span>
+                    </div>
+                    <ul class="highlights">
+                        <li>Built event-driven meeting-bot scheduling from two sources: Google Calendar webhooks with incremental sync for reschedules and cancellations, and forwarded invites via Gmail API + Pub/Sub. Bots join Meet, Zoom and Teams calls with zero manual setup.</li>
+                        <li>Engineered idempotent mid-call product and deal switching that carries conversation context and isolates per-call state.</li>
+                        <li>Replaced per-turn funnel-stage detection with a single post-call LLM classification, validated with ablation experiments, cutting LLM calls per conversation.</li>
+                        <li>Integrated DeepSeek and Bedrock via LiteLLM with per-org prompts, and promoted Terraform-managed AWS infrastructure (ECS, ALB, Secrets Manager, SES, S3) from dev to production.</li>
+                        <li>Shipped Electron in-app updates for Windows and macOS with dev/prod channels and server-enforced minimum versions.</li>
+                    </ul>
+                    <div class="badge-container"><span class="badge">Python</span><span class="badge">FastAPI</span><span class="badge">LiteLLM</span><span class="badge">AWS Bedrock</span><span class="badge">Terraform</span><span class="badge">ECS</span><span class="badge">PostgreSQL</span><span class="badge">Electron</span></div>
+                </article>
+
+                <article class="experience-item">
+                    <div class="experience-heading">
+                        <div>
+                            <h3>Software Development Engineer</h3>
+                            <p class="experience-company">Freshmenu · Bengaluru · joined as intern, full-time from Jan 2024</p>
+                        </div>
+                        <span class="experience-period">Sep 2023 – Mar 2026</span>
+                    </div>
+                    <ul class="highlights">
+                        <li>Built an LLM-driven financial reconciliation platform that auto-detects payout mismatches across Zomato, Swiggy, Magicpin and Bitsila, replacing manual reconciliation.</li>
+                        <li>Designed an LLM rules engine (FAISS + open-source GPT models) that extracts reconciliation rules directly from partner-agreement PDFs.</li>
+                        <li>Engineered procurement automation with OpenCV invoice parsing and AI-based invoice-to-PO matching.</li>
+                        <li>Led ONDC integrations end to end: JWT-secured APIs and asynchronous order processing on ActiveMQ.</li>
+                        <li>Hardened Java/Spring Boot ordering services by fixing production timeouts and null-pointer failures.</li>
+                    </ul>
+                    <div class="badge-container"><span class="badge">Java</span><span class="badge">Spring Boot</span><span class="badge">Python</span><span class="badge">FastAPI</span><span class="badge">Next.js</span><span class="badge">FAISS</span><span class="badge">OpenCV</span><span class="badge">ActiveMQ</span><span class="badge">MySQL</span><span class="badge">MongoDB</span></div>
+                </article>
+            </section>
+
+            <section id="projects" aria-labelledby="projects-title">
+                <h2 id="projects-title">Projects</h2>
+
+                <article class="project-item">
+                    <div class="project-header-row">
+                        <h3><a class="project-title" href="https://github.com/sunnyarya0/my-personal-assistant" target="_blank" rel="noopener noreferrer">Personal AI Agent</a></h3>
+                        <a class="project-link" href="https://github.com/sunnyarya0/my-personal-assistant" target="_blank" rel="noopener noreferrer" aria-label="Personal AI Agent on GitHub">GitHub ↗</a>
+                    </div>
+                    <p class="project-year">2026</p>
+                    <p class="project-desc">A fully local ReAct agent (plan → act → observe) with a decorator-based tool registry and ChromaDB long-term memory. File and shell tools are sandboxed to a workspace, blocking path traversal and destructive commands, and LLM calls retry with exponential backoff. Ships with a live reasoning dashboard and 168 tests running in CI on Python 3.10–3.12.</p>
+                    <div class="badge-container"><span class="badge">Python</span><span class="badge">Ollama</span><span class="badge">ChromaDB</span><span class="badge">sentence-transformers</span></div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-header-row">
+                        <h3><a class="project-title" href="https://github.com/sunnyarya0/ai-knowledge-assistant" target="_blank" rel="noopener noreferrer">AI Knowledge Assistant</a></h3>
+                        <a class="project-link" href="https://github.com/sunnyarya0/ai-knowledge-assistant" target="_blank" rel="noopener noreferrer" aria-label="AI Knowledge Assistant on GitHub">GitHub ↗</a>
+                    </div>
+                    <p class="project-year">2026</p>
+                    <p class="project-desc">Self-hosted RAG over your own PDFs and notes. An ingestion pipeline chunks and embeds documents into ChromaDB; a FastAPI backend streams answers with source citations from a local Llama 3.2 to a Next.js UI. Runs fully offline with Docker Compose, no external APIs.</p>
+                    <div class="badge-container"><span class="badge">FastAPI</span><span class="badge">Next.js</span><span class="badge">ChromaDB</span><span class="badge">Ollama</span><span class="badge">Docker</span></div>
+                </article>
             </section>
         </main>
 
-        <aside class="extras">
-            <section id="education">
-                <h2>Education</h2>
+        <aside class="sidebar" aria-label="Profile">
+            <div class="profile">
+                <img class="profile-image" src="hero.jpeg" alt="Sunny Arya" width="400" height="400">
+                <p class="profile-name">Sunny Arya</p>
+                <p class="affiliation">Founding AI Engineer @ Sponte</p>
+                <p class="location">Bengaluru, India</p>
+                <p class="short-about">Backend + GenAI engineer with ~3 years shipping production systems in Python/FastAPI and Java/Spring Boot.</p>
+            </div>
+
+            <section id="education" aria-labelledby="education-title">
+                <h2 id="education-title">Education</h2>
                 <div class="education-item">
-                    <div class="edu-title">IIT Madras</div>
-                    <div class="edu-year">2022 – 2026</div>
-                    <p class="edu-desc">B.S. Data Science</p>
+                    <p class="edu-title">IIT Madras</p>
+                    <p class="edu-desc">B.S. in Data Science and Applications</p>
+                    <p class="edu-year">2022 – 2026</p>
                 </div>
                 <div class="education-item">
-                    <div class="edu-title">Masai School</div>
-                    <div class="edu-year">2022</div>
-                    <p class="edu-desc">Full Stack Web</p>
+                    <p class="edu-title">Masai School</p>
+                    <p class="edu-desc">Full Stack Web Development (Java, Spring Boot, MySQL)</p>
+                    <p class="edu-year">2022</p>
                 </div>
             </section>
 
-            <section id="skills">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category"><strong>Languages:</strong> Java, Python, JS, SQL</div>
-                    <div class="skill-category"><strong>Backend:</strong> Spring Boot, FastAPI, ActiveMQ</div>
-                    <div class="skill-category"><strong>AI/ML:</strong> LLMs, RAG, Agents, LiteLLM, Bedrock</div>
-                    <div class="skill-category"><strong>Infra:</strong> AWS (ECS, S3, SES), Terraform, Docker, PostgreSQL</div>
-                </div>
+            <section id="skills" aria-labelledby="skills-title">
+                <h2 id="skills-title">Skills</h2>
+                <dl class="skills-grid">
+                    <div class="skill-category"><dt>Languages</dt><dd>Python, Java, SQL, JavaScript</dd></div>
+                    <div class="skill-category"><dt>GenAI</dt><dd>LLMs, RAG, Agents, Evals, LangChain, LiteLLM, AWS Bedrock, FAISS, pgvector, ChromaDB</dd></div>
+                    <div class="skill-category"><dt>Backend</dt><dd>FastAPI, Spring Boot, REST, ActiveMQ, JWT</dd></div>
+                    <div class="skill-category"><dt>Data &amp; Infra</dt><dd>PostgreSQL, MySQL, MongoDB, Redis, AWS (ECS, ALB, S3, SES), Terraform, Docker, GitHub Actions</dd></div>
+                    <div class="skill-category"><dt>Frontend</dt><dd>React, Next.js, Electron, Tailwind CSS</dd></div>
+                </dl>
             </section>
 
-            <section id="achievements">
-                <h2>Achievements</h2>
+            <section id="achievements" aria-labelledby="achievements-title">
+                <h2 id="achievements-title">Achievements</h2>
                 <ul class="achievements-list">
-                    <li>Solved 1200+ DSA problems</li>
-                    <li>AlgoUniversity Accelerator</li>
-                    <li>Founding AI Engineer at Sponte</li>
+                    <li>Selected among top students in the AlgoUniversity Accelerator; mentored by engineers from Google and Apple.</li>
+                    <li>Solved 1200+ DSA problems across coding platforms.</li>
                 </ul>
             </section>
         </aside>
     </div>
-    <div id="modal-overlay" class="modal-overlay">
-        <div class="modal-content">
-            <button id="modal-close" aria-label="Close modal">&times;</button>
-            <div id="modal-body">
-                <!-- Detailed content will be injected here -->
-            </div>
-        </div>
-    </div>
+
+    <footer class="footer">
+        <p>© 2026 Sunny Arya · <a href="mailto:contact.sunnyarya@gmail.com">contact.sunnyarya@gmail.com</a></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

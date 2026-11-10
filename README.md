@@ -11,10 +11,9 @@ Personal portfolio repository for **Sunny Arya**, an **AI Engineer** specializin
 - **🎯 Minimalist Design:** A clean, focused interface inspired by academic and professional portfolio styles.
 - **🌓 Dark/Light Mode:** Seamless theming support with system preference detection and local storage persistence.
 - **📱 Fully Responsive:** Optimized for all devices with a custom mobile layout featuring:
-  - Slide-in **Work Journey** history.
   - Interactive **Mobile Navigation** dropdown.
   - Persistent profile header for quick identification.
-- **🔍 SEO Optimized:** Complete metadata implementation including Open Graph, Twitter Cards, and canonical links for better search visibility.
+- **🔍 SEO Optimized:** All content is static HTML, with Open Graph, Twitter Cards, schema.org Person data and canonical links.
 - **📄 Resume Integration:** Direct download link for professional CV.
 - **⚡ Zero Frameworks:** Built entirely with Vanilla HTML5, CSS3, and JavaScript for maximum performance and simplicity.
 
@@ -24,7 +23,7 @@ Personal portfolio repository for **Sunny Arya**, an **AI Engineer** specializin
 
 - **HTML5:** Semantic document structure.
 - **CSS3:** Modern CSS variables (Custom Properties), Flexbox, and CSS Grid.
-- **JavaScript:** Custom rendering engine for dynamic experience/project lists and interactive UI components.
+- **JavaScript:** Theme toggle and mobile navigation only; content works without JS.
 - **Robots.txt:** Basic search engine crawler configuration.
 
 ---
@@ -35,9 +34,10 @@ Personal portfolio repository for **Sunny Arya**, an **AI Engineer** specializin
 .
 ├── index.html          # Main entry point and SEO metadata
 ├── style.css           # Polished minimal design & responsive media queries
-├── script.js           # Dynamic content rendering & UI interaction logic
+├── script.js           # Theme toggle and mobile navigation
 ├── robots.txt          # SEO crawler instructions
-├── hero.png            # Profile image
+├── hero.jpeg           # Profile image
+├── hero.png            # Social preview image
 ├── resume.pdf          # Professional CV
 └── README.md           # Project documentation
 ```
@@ -60,10 +60,10 @@ Since this project uses no external libraries or build tools, you can run it ins
 ## 💡 About Sunny Arya
 
 Currently focused on architecting Generative AI workflows and high-performance backend systems.
-- **Languages:** Java, Python, JavaScript, SQL
-- **Backend:** Spring Boot, FastAPI, Node.js
-- **AI/ML:** LLMs, RAG, LangChain, FAISS, pgvector
-- **Tools:** AWS, Docker, Git
+- **Languages:** Python, Java, SQL, JavaScript
+- **GenAI:** LLMs, RAG, Agents, Evals, LangChain, LiteLLM, AWS Bedrock
+- **Backend:** FastAPI, Spring Boot, ActiveMQ
+- **Infra:** AWS, Terraform, Docker, PostgreSQL
 
 ---
 
